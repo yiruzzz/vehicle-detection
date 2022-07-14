@@ -36,6 +36,6 @@ Because of the resolution of ITCVD dataset is higher than the test images we bou
     
   - Convert txt format to coco format.
   
-    There are four terms in coco format, json_dict = {"images": [ ], "type": "instances", "annotations": [ ], "categories": [ ]}. Code in /pro_process/txt2coco.py.
+    There are four terms in coco format, json_dict = {"images": [ ], "type": "instances", "annotations": [ ], "categories": [ ]}. Code in /pro_process/txt2coco.py. Reference link: https://github.com/yiruzzz/NWPU-VHR-10_2_VOC/blob/main/NWPU-VHR-10_2_voc.py and https://github.com/yiruzzz/voc2coco/blob/main/voc2coco.py.
 #### 3. Conclusion
 At this point, the preparation is completed, then we trained the dataset with mmdetection framework. 
