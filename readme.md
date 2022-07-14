@@ -38,4 +38,4 @@ Because of the resolution of ITCVD dataset is higher than the test images we bou
   
     There are four terms in coco format, json_dict = {"images": [ ], "type": "instances", "annotations": [ ], "categories": [ ]}. Code in /pro_process/txt2coco.py.
 #### 3. Conclusion
-At this point, the preparation is completed, then I trained the dataset with mmdetection framework. It is worth noting that, in fact, the annotation data in mat format can be directly converted into coco format without first converting into txt format and then coco format, and i achieved it. Code in /pro_process/mat2coco.py.
+At this point, the preparation is completed, then we trained the dataset with mmdetection framework. It is worth noting that, in fact, the annotation data in mat format can be directly converted into coco format without first converting into txt format and then coco format, and i achieved it. Code in /pro_process/mat2coco.py.
