@@ -1,7 +1,7 @@
 ### Vehicle Detection
 
 #### 1. ITCVD Dataset
-> Dataset reference: http://www.javashuo.com/link?url=https://eostore.itc.utwente.nl:5001/fsdownload/zZYfgbB2X/ITCVD
+> Dataset reference: https://aistudio.baidu.com/aistudio/datasetdetail/54674
 
 > Refenrence paper : Vehicle Detection in Aerial Images
 
