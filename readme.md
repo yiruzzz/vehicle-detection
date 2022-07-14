@@ -31,9 +31,11 @@ Because of the resolution of ITCVD dataset is higher than the test images we bou
     The remaining two columns represent orientation information, which is not used for the time being.
     
   - Modify the label.
-    As a result of resizing and cliping the original image, the coordinate of every object also need to be changed. Firstly, a label file is divided into four, namely       left-up, right-up, left-bottom, right-bottom, according to the position of objects in the original image. Then all coordinates are divided by 2. Finally the results     are stored in txt format. Code in /pro_process/mat.py.
+
+    As a result of resizing and cliping the original image, the coordinate of every object also need to be changed. Firstly, a label file is divided into four, namely     left-up, right-up, left-bottom, right-bottom, according to the position of objects in the original image. Then all coordinates are divided by 2. Finally the     results are stored in txt format. Code in /pro_process/mat.py.
     
   - Convert txt format to coco format.
+  
     There are four terms in coco format, json_dict = {"images": [ ], "type": "instances", "annotations": [ ], "categories": [ ]}. Code in /pro_process/txt2coco.py.
 #### 3. Conclusion
 At this point, the preparation is completed, then I trained the dataset with mmdetection framework. It is worth noting that, in fact, the annotation data in mat format can be directly converted into coco format without first converting into txt format and then coco format, and i achieved it. Code in /pro_process/mat2coco.py.
