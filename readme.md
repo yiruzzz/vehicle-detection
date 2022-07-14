@@ -19,10 +19,15 @@ Because of the resolution of ITCVD dataset is higher than the test images we bou
 - Ground Truth Process: 
   - Description of Ground Truth in ITCVD:
     The size of the matrix for ground truth is Num_vehicle x Num_information.
+    
     Num_vehicle describes the number of vehicle in the current picture, and Num_information means the information of each marked vehicle.
+    
     In this dataset, the length of Num_information is 6.
+    
     The first and second columns denote the coordinate of the upper left corner of the bounding box (x, y).
+    
     The third and fourth columns describe the coordinate of the lower right corner of the bounding box (x, y).
+    
     The remaining two columns represent orientation information, which is not used for the time being.
     
   - Modify the label.
