@@ -1,11 +1,11 @@
 ### Vehicle Detection
 
 #### 1. ITCVD Dataset
-> Dataset Reference: http://www.javashuo.com/link?url=https://eostore.itc.utwente.nl:5001/fsdownload/zZYfgbB2X/ITCVD
+> Dataset reference: http://www.javashuo.com/link?url=https://eostore.itc.utwente.nl:5001/fsdownload/zZYfgbB2X/ITCVD
 
-> Refenrence Paper : Vehicle Detection in Aerial Images
+> Refenrence paper : Vehicle Detection in Aerial Images
 
-> Remote Sensing Object Detection Datasets: [Refenrence link](http://www.javashuo.com/article/p-kkahprhx-sx.html)
+> Refenrence link of remote sensing object detection datasets: http://www.javashuo.com/article/p-kkahprhx-sx.html
 
 #### 2. Dataset Pre-processing
 Because of the resolution of ITCVD dataset is higher than the test images we bought, the first step should be downsample the dataset according to the following steps:
