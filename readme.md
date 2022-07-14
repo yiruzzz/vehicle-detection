@@ -10,7 +10,7 @@
 #### 2. Dataset Pre-processing
 Because of the resolution of ITCVD dataset is higher than the test images we bought, the first step should be downsample the dataset according to the following steps:
 
-- Images Downsample: Down sample an image twice and then up sample to get an image with half the original resolution. Code in /pre_process/downsample.py
+- Images Downsample: Down sample an image twice and then up sample to get an image with half the original resolution. Code in /pre_process/downsample.py Reference link: https://github.com/caihuaye/Python-OpenCV3/blob/main/HelloOpenCV.ipynb
 
 - Images Clip: Cut the image with the resolution of 1/2 obtained in the previous step into 4 sub images, and the naming example is as follows:
 
