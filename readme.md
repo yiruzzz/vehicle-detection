@@ -107,4 +107,4 @@ All training results are saved to `runs/train/` with incrementing run directorie
 ##### 3.4 Inference
 
 Modify the paremeters `source`, `data`, `weights`, and run `/yolov5/detect.py`.
-If you want to show more bounding boxes no matter the detection precision, you can modify the parameter `conf-thres` in `/yolov5/detect.py`.
+If you want to show more bounding boxes no matter the detection precision, you can modify the parameter `conf-thres` in `/yolov5/detect.py`, which makes it seem that more objects have been detected.
