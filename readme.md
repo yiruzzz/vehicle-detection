@@ -73,7 +73,7 @@ Refer to : https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data
 It is the dataset config file that defines 1) the dataset root directory `path` and relative paths to `train` / `val` / `test` image directories (or *.txt files with image paths), 2) the number of classes `nc` and 3) a list of class `names`:
 ```
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
-path: /datasets/ITCVD_new  # dataset root dir
+path: /datasets/ITCVD  # dataset root dir
 train: /images/train  # train images (relative to 'path') 128 images
 val: /images/val  # val images (relative to 'path') 128 images
 test: /images/test # test images (optional)
