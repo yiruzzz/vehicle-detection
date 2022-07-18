@@ -8,7 +8,7 @@
 > Refenrence link of remote sensing object detection datasets: http://www.javashuo.com/article/p-kkahprhx-sx.html
 
 #### 2. Dataset Pre-processing
-Because of the resolution of ITCVD dataset is higher than the test images we bought, the first step should be downsample the dataset according to the following steps:
+Because of the resolution of ITCVD dataset is higher than the test images we bought, the first step should be downsample the dataset according to the following steps (usually not necessary):
 
 - Images Downsample: Down sample an image twice and then up sample to get an image with half the original resolution. Code in /pre_process/downsample.py Reference link: https://github.com/caihuaye/Python-OpenCV3/blob/main/HelloOpenCV.ipynb
 
@@ -37,5 +37,29 @@ Because of the resolution of ITCVD dataset is higher than the test images we bou
   - Convert txt format to coco format.
   
     There are four terms in coco format, json_dict = {"images": [ ], "type": "instances", "annotations": [ ], "categories": [ ]}. Code in /pro_process/txt2coco.py. Reference link: https://github.com/yiruzzz/NWPU-VHR-10_2_VOC/blob/main/NWPU-VHR-10_2_voc.py and https://github.com/yiruzzz/voc2coco/blob/main/voc2coco.py.
-#### 3. Conclusion
-At this point, the preparation is completed, then we trained the dataset with mmdetection framework. 
+#### 3. Train on YOLOV5
+At this point, the preparation is completed to train the dataset with mmdetection framework. But the results are not satisfactory on such small targets like vehicles. So we train the dateset on YOLOV5.
+
+##### 3.1 Dataset Preparation 
+
+- The project should be organized as:
+
+  ```text
+  dataset
+  |   |images
+  │   ├──   ├── train
+  │   ├──   │     ├── 00000.jpg
+  │   ├──   ├── val
+  │   ├──   │     ├── 00001.jpg
+  │   ├──   ├── test
+  │   ├──   │     ├── 00002.jpg
+  │   |labels
+  │   ├──   ├── train
+  │   ├──   │     ├── 00000.txt
+  │   ├──   ├── val
+  │   ├──   │     ├── 00001.txt
+  │   ├──   ├── test
+  │   ├──   │     ├── 00002.txt
+  │   ├── dataset.yaml
+  yolov5
+  ```
