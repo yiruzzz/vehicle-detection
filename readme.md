@@ -44,7 +44,7 @@ At this point, the preparation is completed to train the dataset with mmdetectio
 
 Refer to : https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data
 
-- The project should be organized as (Refer to (COCO128)[https://www.kaggle.com/datasets/ultralytics/coco128]):
+- The project should be organized as (Refer to [COCO128](https://www.kaggle.com/datasets/ultralytics/coco128)):
 
   ```text
   dataset 
@@ -92,7 +92,7 @@ The YOLO format, with one `*.txt` file per image (if no objects in image, no `*.
   - Class numbers are zero-indexed (start from 0). 
 ##### 3.2 Select a Model
 
-We select the (yolov5x)[https://github.com/ultralytics/yolov5/releases] model and download it into `yolov5` directory.
+We select the [yolov5x](https://github.com/ultralytics/yolov5/releases) model and download it into `yolov5` directory.
 
 ##### 3.3 Train
 
