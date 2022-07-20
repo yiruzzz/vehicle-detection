@@ -18,7 +18,7 @@ class image_to_patch:
         self.img_path = img_path
         self.crop_image_path = crop_image_path
 
-        if not os.path.exists(crop_image_path):
+        if not os.path.exists(crop_image_path):   
             os.mkdir(crop_image_path)
 
     def to_patch(self):
@@ -32,7 +32,7 @@ class image_to_patch:
 
         for x in range(0, h-300, self.x_stride):
             for y in range(0, w-300, self.y_stride):
-                box = [x, y, x + self.x_stride, y + self.y_stride]
+                box = [x, y, x + self.x_stride, y + self.y_stride]   
                 # if x != 0 and y != 0:
                 #     box = [x - 200, y - 200, x + self.x_stride, y + self.y_stride]
                 sub_img_label = img.crop(box)
