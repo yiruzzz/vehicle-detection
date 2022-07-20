@@ -82,7 +82,7 @@ save_json_test = os.path.join(coco_folder, 'Anns/instances_test.json')
 
 if os.path.exists(coco_folder + "/train"):
     shutil.rmtree(coco_folder + "/train")
-os.makedirs(coco_folder + "/train")
+os.makedirs(coco_folder + "/train")  
 
 if os.path.exists(coco_folder + "/val"):
     shutil.rmtree(coco_folder + "/val")
