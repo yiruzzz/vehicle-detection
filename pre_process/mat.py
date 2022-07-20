@@ -11,7 +11,7 @@ import os
 # print(data)
 # print(type(data))
 
-
+  
 # file_list = os.listdir("E:/detection/GT")
 # print(file_list)
 
