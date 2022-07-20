@@ -14,7 +14,7 @@ for filename in os.listdir(img_dir):
     # img_down = np.zeros((im.shape[0], im.shape[1]))
     # img_down = im[1:h:8, 1:w:8]
 
-
+   
     # print(im.shape)
     img_down = cv2.resize(im, (im.shape[1]//2, im.shape[0]//2), interpolation=cv2.INTER_AREA)
     # print(img_down.shape)
